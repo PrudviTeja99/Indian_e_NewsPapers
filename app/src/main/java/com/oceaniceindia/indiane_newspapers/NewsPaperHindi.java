@@ -25,7 +25,7 @@ public class NewsPaperHindi extends AppCompatActivity {
         setContentView(R.layout.newspaper);
         mywebview=(WebView) findViewById(R.id.webview);
 
-
+        getSupportActionBar().hide();
         String name = getIntent().getStringExtra("name");
         Toast.makeText(this,name,Toast.LENGTH_SHORT).show();
 

@@ -30,6 +30,8 @@ public class NewsPaperEnglish extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.newspaper);
 
+        getSupportActionBar().hide();
+
         mywebview=(WebView) findViewById(R.id.webview);
 
         String name = getIntent().getStringExtra("name");
